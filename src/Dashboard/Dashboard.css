@@ -1,0 +1,109 @@
+.main {
+    margin-left: 120px; /* Adjust margin to account for the width of the sidebar */
+    padding: 90px; /* Add padding to the main content area */
+    height: 100vh; /* Use viewport height to make the main content area fill the screen */
+    /*overflow-y: auto;  Enable vertical scrolling for the main content area */
+  }
+
+  @media only screen and (max-width: 900px) {
+    .main {
+        margin-left: -70px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .main {
+        margin-left: -70px;
+        margin-bottom: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .main {
+        margin-left: -70px;
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 200px) {
+    .main {
+        margin-left: -70px;
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+  }
+
+  .dashboard {
+    padding: 40px 0; /* Padding for top and bottom */
+    margin: 0 auto; /* Center the dashboard horizontally */
+    max-width: 90%; /* Set a maximum width for responsiveness */
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    display: flex; /* Allow vertical stacking of Topbar and content */
+    flex-direction: column;
+  }
+
+  /*.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }*/
+  
+  .card-row {
+    /*display: flex; /* Arrange cards within each row horizontally */
+    /*flex-wrap: wrap; /* Wrap cards to next line on smaller screens */
+    width: 90%; /* Ensure each row takes up half the width */
+    padding-bottom: 9px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Indicate clickable cards */
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to right, #f7f5f5 59%, #d39803e0);
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Slight hover effect */
+  }
+
+  .flexx {
+    display: flex;
+    gap: 9px;
+    width: 90%;
+    
+  }
+
+  .divide {
+    padding: 20px;
+  }
+  
+  /* Media Query for Responsive Size Reduction */
+  
+  @media (max-width: 900px) {
+    .card {
+      width: calc(90% - 10px); /* Reduce card size for smaller screens */
+    }
+  
+    .content {
+      flex-direction: column; /* Stack card rows on top of each other for smaller screens */
+      justify-content: center; /* Center card rows vertically */
+    }
+  
+    .card-row {
+      width: 500px; /* Cards fill the full width on smaller screens */
+    }
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      width: 200px; /* Reduce card size for smaller screens */
+    }
+
+    .flexx {
+      flex-direction: column; /* Stack card rows on top of each other for smaller screens */
+      justify-content: center; /* Center card rows vertically */
+    }
+  }

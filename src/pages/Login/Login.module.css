@@ -1,0 +1,168 @@
+html {
+    /*background: linear-gradient(to bottom, #f7f5f5 59%, #d39803e0);*/
+    overflow-x: hidden;
+}
+
+.App {
+    position: relative;
+    text-align: center;
+    top: 10px;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    color: #d39803e0;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+      font-size: 18px;
+    }
+  }
+
+.citlogo {
+    width: 120px;
+    padding-bottom: 40px;
+}
+
+#email {
+    outline-style: none;
+    border-style: none;
+    position: relative;
+    left: -110px;
+    top: -2px;
+    font-size: 11px;
+    background-color: transparent;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #email {
+      left: 2px;
+    }
+  }
+  
+  #passw {
+    outline-style: none;
+    border-style: none;
+    position: relative;
+    left: -110px;
+    top: -2px;
+    font-size: 11px;
+    background-color: transparent;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #passw {
+      left: 2px;
+    }
+  }
+
+  .lemail {
+    text-align: left;
+    font-size: small;
+  }
+  
+  #fieldemail {
+    width: 400px;
+    height: 30px;
+    border-radius: 9px;
+    border-color: #d39803e0;
+    color: #828282;
+    position: relative;
+    top: 20px;
+    margin: 0px auto;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #fieldemail {
+      width: 200px;
+      height: 40px;
+    }
+  }
+
+  .lpassw {
+    text-align: left;
+    font-size: small;
+  }
+  
+  #fieldpassword {
+    width: 400px;
+    height: 30px;
+    border-radius: 9px;
+    border-color: #d39803e0;
+    color: #828282;
+    margin: 0px auto;
+    position: relative;
+    top: 30px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #fieldpassword {
+      width: 200px;
+      height: 40px;
+    }
+  }
+  
+  #forgot {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    width: 140px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #d39803e0;
+    text-decoration: none;
+  }
+  
+  #forgot:hover {
+    color: #856003;
+  }
+  
+  #button {
+    width: 400px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: #d39803e0;
+    border:1px solid #d39803e0;
+    color: white;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #button:hover {
+    background-color: #856003;
+    border: 1px solid #856003;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #button {
+      width: 200px;
+      height: 40px;
+    }
+  }
+
+  #a {
+    color: #b68303;
+    text-decoration: none;
+  }
+
+  #a:hover {
+    color: #856003;
+  }
+
+  #move {
+    padding-top: 40px;
+  }
+
+  #noacct {
+    padding-top: 20px;
+  }

@@ -1,0 +1,59 @@
+.topbar {
+    background-color: #f7f5f5; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px; /* Add some padding for spacing */
+    border-bottom: 2px solid #ddd;
+    border-top: 8px double #d39803e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .topbar h1 {
+    /*font-size: 1.5rem;  Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .logout-button {
+    font-weight: bold;
+  }
+
+  .out {
+    color: #d39803e0;
+    text-decoration: none;
+  }
+
+  .out:hover {
+    color: #856003;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .out {
+      font-size: 14px;
+    }
+  }
+
+  .individual {
+    padding-bottom: 40px;
+    position: relative;
+    top: 18px;
+    left: 200px;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .individual {
+      left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .individual {
+      font-size: 14px;
+    }
+  }

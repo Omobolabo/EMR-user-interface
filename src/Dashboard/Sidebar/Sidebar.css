@@ -1,0 +1,108 @@
+.sidebar {
+  z-index: 10;
+  background-color: #f7f5f5; /* Light gray background */
+  color: #333; /* Dark text for readability */
+  width: 200px; /* Adjust width as needed */
+  height: 100vh; /* Full viewport height */
+  position: fixed; /* Fixed positioning for consistency */
+  top: 0; /* Top of the viewport */
+  left: 0; /* Left side of the viewport */
+  padding: 20px; /* Inner padding for spacing */
+  transition: transform 0.3s ease-in-out;  /* Add smooth transition */
+  box-sizing: border-box; /* Include padding in width calculation */
+  border-right: 1px solid #ddd; /* Optional border for separation */
+  /*overflow-y: auto;  Enable scrolling for long content */
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: 18%;
+    top: 82%;
+    background-color: #f7f5f5;
+    border-top: 2px solid #ddd;
+  }
+}
+
+.sidebar ul {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -60px;
+    justify-content: right;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sidebar ul {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sidebar ul {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .sidebar ul {
+    font-size: 10px;
+    left: -20px;
+    top: -80px;
+  }
+}
+
+.sidebar li {
+  margin-bottom: 10px; /* Spacing between list items */
+  cursor: pointer; /* Indicate hover interaction */
+}
+
+.sidebar-link {
+  color: inherit; /* Inherit text color from sidebar */
+  text-decoration: none; /* Remove default underline */
+  display: block; /* Make links fill the entire list item width */
+  padding: 5px 10px; /* Add some padding for spacing */
+  transition: background-color 0.2s ease-in-out; /* Optional smooth hover effect */
+}
+
+.sidebar-link:hover {
+  background-color: #e0e0e0; /* Optional hover effect (adjust as desired) */
+}
+
+.sidebar-link:focus {
+  background-color: #bebdbd;
+}
+
+.citlogo {
+  width: 120px;
+  padding-bottom: 40px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .citlogo {
+    width: 90px;
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .citlogo {
+    width: 70px;
+    top: 40px;
+    left: 80px;
+  }
+}

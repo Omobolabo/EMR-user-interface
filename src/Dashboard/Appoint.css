@@ -1,0 +1,171 @@
+.Amain {
+    margin-left: 120px; /* Adjust margin to account for the width of the sidebar */
+    padding: 90px; /* Add padding to the main content area */
+    height: 100vh; /* Use viewport height to make the main content area fill the screen */
+    /*overflow-y: auto;  Enable vertical scrolling for the main content area */
+  }
+
+  @media only screen and (max-width: 900px) {
+    .Amain {
+        margin-left: -70px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Amain {
+        margin-left: -70px;
+        margin-bottom: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .Amain {
+        margin-left: -70px;
+        margin-top: 150px;
+        margin-bottom: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 200px) {
+    .Amain {
+        margin-left: -70px;
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+  }
+  
+  .Acontent {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .appointments-table th,
+  .appointments-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .appointments-table th {
+    background-color: #d39803e0;
+    color: white;
+  }
+  
+  button {
+    background-color: #d39803e0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b48202;
+  }
+
+  .delete {
+    background-color: #d60909;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete:hover {
+    background-color: #bb0202;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 11;
+  }
+  
+  .modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal label {
+    margin-top: 10px;
+  }
+  
+  .modal input,
+  .modal textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .modal button {
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .appointments-table, .appointments-table thead, .appointments-table tbody, .appointments-table th, .appointments-table td, .appointments-table tr {
+      display: block;
+    }
+  
+    .appointments-table thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    .appointments-table tr { border: 1px solid #ccc; }
+  
+    .appointments-table td {
+      /* Behave like a "row" */
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      text-align: right;
+    }
+  
+    .appointments-table td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+    }
+  
+    /* Label the data */
+    .appointments-table td:before { content: attr(data-label); }
+  }
+
+  .add {
+    margin-bottom: 200px;
+  }
