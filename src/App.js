@@ -5,8 +5,7 @@ import SignUp from "./pages/Signup/SignUp";
 import Otp from "./pages/OTP/otp";
 import Changepassword from "./pages/Changepassword/Changepassword";
 import Dashboard from "./Dashboard/Dashboard";
-import Patients from "./Dashboard/Patients";
-import Appointment from "./Dashboard/Appoint";
+import Appointment from "./Dashboard/Appoint/Appoint";
 
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
             <Route path="/otp" element={<Otp />} />
             <Route path="/changepassword" element={<Changepassword />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/patients" element={<Patients />} />
             <Route path="/appointments" element={<Appointment />} />
           </Routes>
         

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Appoint.css';
-import Topbar from './Topbar/Topbar';
-import Sidebar from './Sidebar/Sidebar';
+import Topbar from '../Topbar/Topbar';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Appointment = () => {
   const [appointments, setAppointments] = useState([]);

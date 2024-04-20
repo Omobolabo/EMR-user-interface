@@ -9,7 +9,7 @@ const Dashboard = () => {
   const cards = [
     { icon: faUserDoctor, title: 'NO. of doctors available', description: 'There are {9} Doctors available now.' },
     { icon: faSyringe, title: 'NO. of pharmacists available', description: '{2} Pharmacists available.' },
-    { icon: faTh, title: 'Blog Posts', description: 'Read nutritional content here for better living.' },
+    { icon: faTh, title: 'Patients', description: 'All registered patients and their record.' },
     { icon: faFileAlt, title: 'Record of patients seen today', description: 'Generate and analyze patient reports and charts.' },
   ];
 

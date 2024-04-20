@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./SignUp.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import citadellogo from "../../assets/CITADELLOGO.jpg";
 
 const SignUp = () => {
@@ -18,6 +18,11 @@ const SignUp = () => {
   const SignUpHandler = (e) => {
     e.preventDefault();
     navigate("/dashboard");
+  };
+
+  const LoginPage = (e) => {
+    e.preventDefault();
+    navigate("/");
   };
 
   return (
@@ -81,7 +86,7 @@ const SignUp = () => {
       </form>  
 
 
-  <div><p id={styles.noacct}> Already have an account?<a id={styles.a} href="http://localhost:3000/"> Log In </a></p></div>
+  <div><p id={styles.noacct}> Already have an account?<Link id={styles.a} onClick={LoginPage}> Log In </Link></p></div>
 
       </div>
     </>

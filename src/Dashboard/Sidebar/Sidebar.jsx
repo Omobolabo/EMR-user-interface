@@ -16,11 +16,6 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/patients" className="sidebar-link">
-            Patients
-          </Link>
-        </li>
-        <li>
           <Link to="/appointments" className="sidebar-link">
             Appointments
           </Link>

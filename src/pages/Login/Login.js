@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Login.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import citadellogo from "../../assets/CITADELLOGO.jpg";
 
 const Login = () => {
@@ -17,6 +17,11 @@ const Login = () => {
     const LoginHandler = (e) => {
       e.preventDefault();
       navigate("/dashboard");
+    };
+
+    const SignupPage = (e) => {
+      e.preventDefault();
+      navigate("/signup");
     };
     return (
       <>
@@ -64,7 +69,7 @@ const Login = () => {
             <p id={styles.noacct}>
               {" "}
               Don’t have an account?
-              <a id={styles.a} href="http://localhost:3000/signup"> Sign up </a>
+              <Link id={styles.a} onClick={SignupPage}> Sign up </Link>
             </p>
           </div>
         </div>
